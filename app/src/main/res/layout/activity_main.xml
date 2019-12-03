@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#009688"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/headerTxt"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:fontFamily="casual"
+        android:text="Spiritual Teachers App"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="@color/common_google_signin_btn_text_dark_default"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="196dp"
+        android:layout_above="@+id/button_zone"
+        android:layout_marginBottom="5dp"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/concert" />
+
+    <RelativeLayout
+        android:id="@+id/button_zone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/openTeachersActivityBtn"
+            style="?android:attr/button"
+            android:layout_width="198dp"
+            android:layout_height="134dp"
+            android:layout_weight="1"
+            android:background="@drawable/common_google_signin_btn_icon_dark_normal_background"
+            android:text="View All"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/openUploadActivityBtn"
+            style="?android:attr/button"
+            android:layout_width="186dp"
+            android:layout_height="128dp"
+            android:layout_marginLeft="18dp"
+            android:layout_toRightOf="@+id/openTeachersActivityBtn"
+            android:layout_weight="1"
+            android:background="@drawable/common_google_signin_btn_icon_dark_normal_background"
+            android:clickable="true"
+            android:text="Add New"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/openUploadActivityBt1"
+            style="?android:attr/button"
+            android:layout_width="204dp"
+
+            android:layout_height="125dp"
+            android:layout_below="@+id/openTeachersActivityBtn"
+            android:layout_weight="1"
+            android:background="@drawable/common_google_signin_btn_icon_dark_normal_background"
+            android:clickable="true"
+            android:text="Add New"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/openUploadActivityBtn2"
+            style="?android:attr/button"
+            android:layout_width="190dp"
+            android:layout_height="126dp"
+            android:layout_below="@id/openTeachersActivityBtn"
+            android:layout_marginLeft="18dp"
+            android:layout_toRightOf="@+id/openUploadActivityBt1"
+            android:layout_weight="1"
+            android:background="@drawable/common_google_signin_btn_icon_dark_normal_background"
+            android:clickable="true"
+            android:text="Add New"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="24sp" />
+
+
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
