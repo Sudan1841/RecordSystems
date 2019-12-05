@@ -53,14 +53,14 @@
                 android:minLines="3" />
 
             <LinearLayout
-                android:layout_width="329dp"
-                android:layout_height="wrap_content"
+                android:layout_width="274dp"
+                android:layout_height="143dp"
                 android:orientation="horizontal">
 
                 <Button
                     android:id="@+id/button_choose_image"
-                    android:layout_width="329dp"
-                    android:layout_height="163dp"
+                    android:layout_width="253dp"
+                    android:layout_height="145dp"
                     android:layout_marginStart="16dp"
                     android:layout_marginLeft="16dp"
                     android:background="@color/dark"
@@ -76,8 +76,8 @@
 
             <Button
                 android:id="@+id/uploadBtn"
-                android:layout_width="419dp"
-                android:layout_height="145dp"
+                android:layout_width="466dp"
+                android:layout_height="98dp"
                 android:layout_gravity="center"
                 android:layout_marginStart="16dp"
                 android:layout_marginLeft="16dp"

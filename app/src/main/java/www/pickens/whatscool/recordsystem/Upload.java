@@ -171,23 +171,3 @@ public class Upload extends AppCompatActivity {    private static final int PICK
 }
 
 
-//photoStorageReference.putFile(selectedImageUri).continueWithTask(new Continuation<UploadTask.TaskSnapshot, Task<Uri>>() {
-//@Override
-//public Task<Uri> then(@NonNull Task<UploadTask.TaskSnapshot> task) throws Exception {
-//        if (!task.isSuccessful()) {
-//        throw task.getException();
-//        }
-//        return photoStorageReference.getDownloadUrl();
-//        }
-//        }).addOnCompleteListener(new OnCompleteListener<Uri>() {
-//@Override
-//public void onComplete(@NonNull Task<Uri> task) {
-//        if (task.isSuccessful()) {
-//        Uri downloadUri = task.getResult();
-//        FriendlyMessage friendlyMessage = new FriendlyMessage(null, mUsername, downloadUri.toString());
-//        mMessagesDatabaseReference.push().setValue(friendlyMessage);
-//        } else {
-//        Toast.makeText(MainActivity.this, "upload failed: " + task.getException().getMessage(), Toast.LENGTH_SHORT).show();
-//        }
-//        }
-//        });
